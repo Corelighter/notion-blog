@@ -14,7 +14,7 @@ import getNotionUsers from '../../lib/notion/getNotionUsers'
 import { getBlogLink, getDateStr } from '../../lib/blog-helpers'
 
 // Get the data for each blog post
-export async function unstable_getStaticProps({ params: { slug }, preview }) {
+export async function getStaticProps({ params: { slug }, preview }) {
   // load the postsTable so that we can get the page's ID
   const postsTable = await getBlogIndex()
   const post = postsTable[slug]
@@ -151,7 +151,7 @@ const RenderPost = ({ post, redirect, preview }) => {
         </div>
       )}
       
-      <span>{post.tag}</span>      
+      
             
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
