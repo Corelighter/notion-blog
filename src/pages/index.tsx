@@ -12,7 +12,7 @@ export default () => (
       <img
         src="/vercel-and-notion.png"
         height="85"
-        width="400"
+        width="250"
         alt="Vercel + Notion"
       />
       <h1> Blog | 昨日よりも今日 </h1>
